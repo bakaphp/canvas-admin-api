@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Gewaer\Providers;
 
+use function Baka\appPath;
 use Canvas\Providers\ConfigProvider as CanvasConfigProvider;
-use function Canvas\Core\appPath;
-use Phalcon\DiInterface;
 use Phalcon\Config;
+use Phalcon\Di\DiInterface;
 
 class ConfigProvider extends CanvasConfigProvider
 {
     /**
-        * @param DiInterface $container
-        */
-    public function register(DiInterface $container)
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container) : void
     {
         $container->setShared(
             'config',

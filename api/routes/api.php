@@ -1,11 +1,11 @@
 <?php
 
-use Baka\Router\RouteGroup;
 use Baka\Router\Route;
+use Baka\Router\RouteGroup;
 
 $publicRoutes = [
     Route::get('/')->controller('IndexController'),
-    Route::get('/status')->controller('IndexController')->action('status'),
+    Route::get('/status')->controller('IndexController')->action('status')
 ];
 
 $privateRoutes = [

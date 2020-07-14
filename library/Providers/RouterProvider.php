@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Gewaer\Providers;
 
-use function Canvas\Core\appPath;
+use function Baka\appPath;
 use Canvas\Providers\RouterProvider as CanvasRouterProvider;
 
 class RouterProvider extends CanvasRouterProvider
@@ -14,7 +14,7 @@ class RouterProvider extends CanvasRouterProvider
      *
      * @return array
      */
-    protected function getRoutes(): array
+    protected function getRoutes() : array
     {
         $path = appPath('api/routes');
         $canvsaPath = getenv('CANVAS_CORE_PATH');
