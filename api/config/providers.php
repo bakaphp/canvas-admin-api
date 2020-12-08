@@ -27,6 +27,7 @@ use Canvas\Providers\SocialLoginProvider;
 use Gewaer\Providers\MiddlewareProvider;
 use Canvas\Providers\RegistryProvider;
 use Canvas\Providers\ViewProvider;
+use Canvas\Providers\UserProvider;
 
 return [
     ConfigProvider::class,
@@ -51,5 +52,6 @@ return [
     MapperProvider::class,
     ElasticProvider::class,
     SocialLoginProvider::class,
-    ViewProvider::class
+    ViewProvider::class,
+    UserProvider::class
 ];
