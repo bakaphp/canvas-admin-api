@@ -9,6 +9,7 @@ $publicRoutes = [
 ];
 
 $privateRoutes = [
+    Route::crud('/message-types')->controller('MessageTypesController')
 ];
 
 $routeGroup = RouteGroup::from($publicRoutes)
