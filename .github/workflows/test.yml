@@ -102,9 +102,6 @@ jobs:
 
       - name: Setup Env Variable
         run: cp storage/ci/.env.example .env
-
-      - name: Setup Phinx
-        run: cp storage/ci/phinx-core.php.prod phinx-kanvas.php
         
       - name: Setup Phinx
         run: cp storage/ci/phinx.php.example phinx.php
