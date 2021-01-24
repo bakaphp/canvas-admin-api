@@ -16,7 +16,7 @@ class AppsCest
      *
      * @return void
      */
-    public function getDefaultApp(IntegrationTester $I)
+    public function getEcosystemApp(IntegrationTester $I)
     {
         $app = Apps::getACLApp(Apps::CANVAS_DEFAULT_APP_NAME);
         $I->assertTrue($app->name == Apps::CANVAS_DEFAULT_APP_NAME);
@@ -29,7 +29,7 @@ class AppsCest
      *
      * @return void
      */
-    public function getGewaerApp(IntegrationTester $I)
+    public function getEcosystemAppAcl(IntegrationTester $I)
     {
         $diContainer = new FactoryDefault();
 
