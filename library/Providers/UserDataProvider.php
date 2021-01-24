@@ -21,7 +21,7 @@ class UserDataProvider implements ServiceProviderInterface
             function () use ($container) {
                 $userData = $container->get('userProvider');
 
-                return $userData->findFirst(2);
+                return $userData->findFirst(1);
             }
         );
     }
