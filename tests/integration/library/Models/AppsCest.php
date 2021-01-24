@@ -37,6 +37,6 @@ class AppsCest
         $provider->register($diContainer);
 
         //$app = Apps::getACLApp('CRM');
-        $I->assertTrue(Apps::getACLApp('CRM') instanceof Apps);
+        $I->assertTrue(Apps::getACLApp('Default') instanceof Apps);
     }
 }
