@@ -36,7 +36,7 @@ class AppsCest
         $provider = new ConfigProvider();
         $provider->register($diContainer);
 
-        $app = Apps::getACLApp('Gewaer');
+        $app = Apps::getACLApp('CRM');
         $I->assertTrue($app->key == $diContainer->getShared('config')->app->id);
     }
 }
